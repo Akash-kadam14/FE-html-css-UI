@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loginCard {
+  width: 350px;
+  padding: 30px 25px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  margin: 100px auto;
+}
+
+body {
+  background: linear-gradient(50deg, #03fcdb, #63aaec, #9e4ada, #f459f7);
+  /* background: linear-gradient(135deg, #63a4ff, #e24dff); */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#heading {
+  margin: 30px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.inputBox {
+  position: relative;
+  margin: 15px 25px 5px 25px;
+}
+
+.inputBox i {
+  position: absolute;
+  left: 10px;
+  top: 68%;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  font-size: 14px;
+}
+
+.inputBox label {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: small;
+  margin-left: 5px;
+}
+
+#forgotPass {
+  text-align: right;
+  margin: 5px 25px 0 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: small;
+}
+
+button {
+  margin: 30px auto;
+  width: 250px;
+  border: 1px solid;
+  border-radius: 25px;
+  font-size: small;
+  color: white;
+  height: 30px;
+  display: block;
+  background: linear-gradient(90deg, #03fcdb, #63aaec, #9e4ada, #f459f7);
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+.util p {
+  text-align: center;
+  margin-top: 20px;
+  color: grey;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: small;
+}
+
+.socialLogin {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socialLogin i {
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+.fa-facebook-f {
+  background-color: #1877f2;
+}
+.fa-twitter {
+  background-color: #68b3f8;
+}
+.fa-google {
+  background-color: #f32703;
+}
+
+.foot {
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: small;
+}
+.foot p {
+  margin: 20px;
+}
+
+.foot a {
+  text-decoration: none;
+  color: black;
+}
