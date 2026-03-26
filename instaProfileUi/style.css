@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(0deg, #c2c2c2, #dfdfdf, #e0e0e0, #fffefe);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.card {
+  width: 350px;
+  background-color: white;
+  height: 820px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.stausIcons {
+  display: flex;
+  font-size: 14px;
+  gap: 8px;
+}
+
+#heading {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profilePicCard {
+  display: flex;
+  height: 12%;
+  /* border: 1px solid black; */
+  margin: 15px 25px 5px 15px;
+}
+
+.profilePic {
+  /* border: 2px solid rgb(248, 248, 248); */
+  height: 80px;
+  width: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profilePic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Image ko crop karke fit karega */
+  object-position: center;
+}
+
+.profileInfo {
+  /* border: 1px solid black; */
+  height: 50px;
+  width: 60%;
+  margin: 20px 25px 20px 30px;
+}
+
+.profileData {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: medium;
+  font-weight: 700;
+  text-align: center;
+  /* margin: 15px 0px 5px 0px; */
+}
+
+#posts div {
+  font-size: x-small;
+  font-weight: 50;
+  margin-left: 5px;
+}
+
+#followers div {
+  font-size: x-small;
+  font-weight: 50;
+}
+
+#following div {
+  font-size: x-small;
+  font-weight: 50;
+}
+
+.bio {
+  margin-left: 15px;
+}
+
+.bio p,
+a {
+  font-size: small;
+  font-weight: 500;
+  margin-top: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.bio button {
+  margin: 10px 5px;
+  height: 25px;
+  width: 315px;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid;
+  background-color: white;
+  border-color: rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+.allPosts {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tabItem {
+  flex: 1; /*Har tab equal width lega */
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* default (inactive) */
+.tabItem i {
+  font-size: 22px;
+  opacity: 0.4;
+}
+
+/* active */
+.tabItem.active i {
+  opacity: 1;
+}
+
+.tabItem.active {
+  border-bottom: 2px solid black;
+}
+
+.postContainer {
+  display: grid;
+  /* border: 1px solid black; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 120px 120px 120px;
+  gap: 3px;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  object-position: top;
+}
+
+.footerIcons {
+  display: flex;
+  /* border: 1px solid black; */
+  height: 50px;
+  margin-top: 10px;
+  justify-content: space-evenly;
+  font-size: 22px;
+  align-items: center;
+}
+
+.footerIcon.active i {
+  opacity: 1;
+}
+
+.footerIcon i {
+  opacity: 0.5;
+}
